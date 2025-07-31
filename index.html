@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential PPE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-section">
+        <h1 class="page-title">Essential Personal Protective Equipment (PPE)</h1>
+        
+        <div class="content-text">
+            <p>Personal Protective Equipment represents a critical component of forklift safety protocols. Each piece of PPE serves specific protective functions and must be properly maintained and worn at all times during forklift operations. Understanding not just what to wear, but why each item is essential will help ensure consistent compliance with safety requirements.</p>
+        </div>
+
+        <div class="ppe-table">
+            <div class="table-header">
+                <div class="table-cell header-cell">PPE Item</div>
+                <div class="table-cell header-cell">Purpose/Requirements</div>
+            </div>
+            
+            <div class="table-row">
+                <div class="table-cell item-cell">
+                    <strong>Safety Shoes/Steel-toed Boots</strong>
+                </div>
+                <div class="table-cell purpose-cell">
+                    Essential for protecting feet from the forklift's heavy weight and falling materials. Provides necessary grip on various surfaces and protects against electrical hazards.
+                </div>
+            </div>
+            
+            <div class="table-row">
+                <div class="table-cell item-cell">
+                    <strong>Hard Hat</strong>
+                </div>
+                <div class="table-cell purpose-cell">
+                    Crucial in warehouse environments where materials are stored at height. Choose Class E hard hats for additional electrical protection when working with electric forklifts.
+                </div>
+            </div>
+            
+            <div class="table-row">
+                <div class="table-cell item-cell">
+                    <strong>High-visibility Vest</strong>
+                </div>
+                <div class="table-cell purpose-cell">
+                    Critical for maintaining visibility in low-light conditions and busy warehouses. Choose Class 2 or Class 3 vests based on workplace risk assessment.
+                </div>
+            </div>
+            
+            <div class="table-row">
+                <div class="table-cell item-cell">
+                    <strong>Safety Glasses</strong>
+                </div>
+                <div class="table-cell purpose-cell">
+                    Protect against not just debris, but also battery acid during charging operations and hydraulic fluid during maintenance.
+                </div>
+            </div>
+            
+            <div class="table-row">
+                <div class="table-cell item-cell">
+                    <strong>Work Gloves</strong>
+                </div>
+                <div class="table-cell purpose-cell">
+                    Select task-appropriate gloves - mechanical gloves for maintenance, chemical-resistant gloves for battery handling, and cut-resistant gloves for material handling.
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz-section">
+            <div class="question-container">
+                <div class="question-header">
+                    <span class="question-icon">✓</span>
+                    <h3 class="question-title">Question 1</h3>
+                </div>
+                
+                <div class="question-text">
+                    <p>Which of the following is most important when selecting safety footwear for forklift operations?</p>
+                </div>
+
+                <div class="answer-options">
+                    <label class="answer-option selected" for="answer-a">
+                        <input type="radio" id="answer-a" name="question1" value="a" checked>
+                        <span class="radio-custom"></span>
+                        <span class="answer-text">Steel-toed boots with slip-resistant soles</span>
+                    </label>
+
+                    <label class="answer-option" for="answer-b">
+                        <input type="radio" id="answer-b" name="question1" value="b">
+                        <span class="radio-custom"></span>
+                        <span class="answer-text">Comfortable running shoes for mobility</span>
+                    </label>
+
+                    <label class="answer-option" for="answer-c">
+                        <input type="radio" id="answer-c" name="question1" value="c">
+                        <span class="radio-custom"></span>
+                        <span class="answer-text">Any closed-toe shoe</span>
+                    </label>
+
+                    <label class="answer-option" for="answer-d">
+                        <input type="radio" id="answer-d" name="question1" value="d">
+                        <span class="radio-custom"></span>
+                        <span class="answer-text">High-heeled boots for better visibility</span>
+                    </label>
+                </div>
+
+                <div class="explanation-section">
+                    <button class="explanation-toggle" onclick="toggleExplanation()">
+                        <span>Explanation</span>
+                        <span class="arrow">⌄</span>
+                    </button>
+                    <div class="explanation-content" id="explanation">
+                        <div class="explanation-text">
+                            <p>Thanks for answering!</p>
+                            <p>You're right! Steel-toed boots with slip-resistant soles provide essential protection against heavy equipment and falling materials while ensuring proper grip on various warehouse surfaces.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-footer">
+                    <span class="submission-time">Last submitted: Jul 31, 2025, 11:41 AM</span>
+                    <button class="submit-btn" onclick="submitAnswer()">Submit</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Elements Demo -->
+        <div class="demo-section">
+            <h2 class="demo-title">Interactive Elements Demo</h2>
+            
+            <div class="button-group">
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-secondary">Secondary Button</button>
+                <button class="btn btn-outline">Outline Button</button>
+                <button class="btn btn-danger">Danger Button</button>
+            </div>
+
+            <div class="link-demo">
+                <p>Here are some <a href="#" class="text-link">text links</a> that demonstrate hover states with <a href="#" class="text-link">proper accessibility</a> features.</p>
+            </div>
+
+            <div class="card-demo">
+                <div class="hover-card">
+                    <h4>Hover Card</h4>
+                    <p>This card demonstrates accessible hover states with proper focus indicators.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleExplanation() {
+            const explanation = document.getElementById('explanation');
+            const arrow = document.querySelector('.arrow');
+            
+            if (explanation.style.display === 'none' || !explanation.style.display) {
+                explanation.style.display = 'block';
+                arrow.textContent = '⌃';
+            } else {
+                explanation.style.display = 'none';
+                arrow.textContent = '⌄';
+            }
+        }
+
+        function submitAnswer() {
+            const timeElement = document.querySelector('.submission-time');
+            const now = new Date();
+            const timeString = now.toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                year: 'numeric',
+                hour: 'numeric',
+                minute: '2-digit',
+                hour12: true
+            });
+            timeElement.textContent = `Last submitted: ${timeString}`;
+            
+            // Simulate submission feedback
+            const submitBtn = document.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitted!';
+            submitBtn.style.background = '#10b981';
+            
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.style.background = '#2d3748';
+            }, 2000);
+        }
+
+        // Handle radio button selection
+        document.querySelectorAll('input[type="radio"]').forEach(radio => {
+            radio.addEventListener('change', function() {
+                // Remove selected class from all options
+                document.querySelectorAll('.answer-option').forEach(option => {
+                    option.classList.remove('selected');
+                });
+                
+                // Add selected class to the parent of checked radio
+                if (this.checked) {
+                    this.closest('.answer-option').classList.add('selected');
+                }
+            });
+        });
+
+        // Initialize explanation as hidden
+        document.getElementById('explanation').style.display = 'block';
+    </script>
+</body>
+</html>
